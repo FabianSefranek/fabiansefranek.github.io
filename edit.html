@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbin.org ~ Anonymous Text Storage</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <img src="assets/logo.svg" alt="Textbin Logo" id="logo"><br>
+    <textarea name="text" placeholder="" maxlength="5000" spellcheck="false"></textarea ><br>
+    <input type="number" name="pin-input" onkeypress="if(this.value.length==8) return false; return event.charCode >= 48;" onkeydown="return event.keyCode !== 69;" id="pin-input" placeholder="8-digit edit and delete pin code">
+    <button id="submit">Save</button><br>
+    <div id="nav"><a href="https://github.com/fabiansefranek/textbin.org">Github</a><p> | </p><a href="textbin.org/about">About</a></div>
+</body>
+</html>

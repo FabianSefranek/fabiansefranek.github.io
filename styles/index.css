@@ -1,0 +1,172 @@
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;} /*hide arrows for input number */
+input[type=number] {-moz-appearance:textfield;}
+html {
+    scrollbar-face-color: #646464;
+    scrollbar-base-color: #646464;
+    scrollbar-3dlight-color: #646464;
+    scrollbar-highlight-color: #646464;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #000;
+    scrollbar-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}
+::-webkit-resizer { background-color: #666;}
+
+body {background-color: #1F1F1F;}
+* {font-family:Arial, Helvetica, sans-serif;}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+textarea {
+    display: block;
+    margin: 1.5rem auto;
+    margin-bottom: 0.5rem;
+    width: 75vw;
+    height: 45vh;
+    padding: 1rem;
+    background-color: #2E2E2E;
+    color:#DCDCDC;
+    font-size: large;
+    border-radius: 0.5rem;
+    border: none;
+    resize: none;
+}
+textarea:focus {outline: none;}
+
+#pin-input {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 75vw;
+    background-color: #2E2E2E;
+    color: #DCDCDC;
+    font-size: larger;
+    border: none;
+    border-radius: 0.25rem;
+}
+#pin-input:focus {outline: none;}
+
+#submit {
+    display: block;
+    color: black;
+    margin: 1.5rem auto;
+    width: 82vw;
+    background-color: white;
+    font-size: larger;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+#submit:focus {outline: none;}
+
+#nav{
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    color: rgb(131, 131, 131);
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: medium;
+}
+#nav > a {color: rgb(131, 131, 131);}
+#nav > p {display: inline;}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    textarea {
+        margin: 2.5rem auto;
+        margin-bottom: 1rem;
+        height: 55vh;
+        padding: 1.25rem;
+        font-size: larger;
+        border-radius: 0.75rem;
+    }
+    #pin-input {
+        padding: 1.25rem;
+        font-size: x-large;
+        border-radius: 0.5rem;
+    }
+    #submit {
+        margin: 2rem auto;
+        width: 80vw;
+        font-size: x-large;
+        border-radius: 0.5rem;
+    }
+    #nav {font-size: larger;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+    #logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    textarea {
+        margin: 1rem auto;
+        margin-bottom: 0.5rem;
+        height: 45vh;
+        font-size: larger;
+    }
+    #pin-input {
+        padding: 1.25rem;
+        font-size: larger;
+    }
+    #submit {
+        margin: 1.5rem auto;
+        width: 78.5vw;
+        font-size: x-large;
+        border-radius: 0.5rem;
+    }
+    #nav {font-size: large;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #submit:active {
+        width: 77vw;
+    }
+    textarea {
+        margin-bottom: 0.75rem;
+        height: 45vh;
+        font-size: large;
+    }
+    #submit {
+        margin: 1.5rem auto;
+        width: 77.75vw;
+        font-size: x-large;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    textarea {
+        margin: 1.5rem auto;
+        height: 55vh;
+        margin-bottom: 0.75rem;
+        font-size: large;
+    }
+    #submit {
+        margin: 1.5rem auto;
+        width: 77.25vw;
+        font-size: x-large;
+        border-radius: 0.5rem;
+    }
+    #nav {font-size: x-large;}
+}
