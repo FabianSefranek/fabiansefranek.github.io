@@ -1,1 +1,0 @@
-# fabiansefranek.github.io
